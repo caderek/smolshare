@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Font Awesome Solid";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/fonts/fa-solid.woff2") format("woff2"),
+    url("./fonts/fa-solid.ttf") format("truetype");
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-contrast: #4a4d5a;
+  --color-high-contrast: #2b2c31;
+  --color-low-contrast: #a9bdc8;
+
+  --color-alt-bg: #eee;
+  --color-alt-contrast: #1e2736;
+  --color-alt-dim: #d8d8d8;
+
+  --color-alt-2-bg: #e3e3e3;
+  --color-alt-2-contrast: #1e2736;
+  --color-alt-2-low-contrast: #65727e;
+
+  --color-accent-bg: #4da155;
+  --color-accent-contrast: #ffffff;
+  --color-accent-low-contrast: #ffffff99;
+
+  --color-status-great: #5ebb5c;
+  --color-status-ok: #9dda5f;
+  --color-status-not-ideal: #ffb23e;
+  --color-status-bad: #f1323e;
+
+  --font-main: Ubuntu, system-ui, sans-serif;
+
+  --font-mono: "Fira Code", "JetBrains Mono", source-code-pro, Menlo, Monaco,
+    Consolas, "Courier New", monospace;
+
+  --font-ico: "Font Awesome Solid";
+
+  --font-s: 0.875rem;
+  --font-m: 1rem;
+  --font-l: 1.25rem;
+
+  --radius-s: 0.25rem;
+
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+
+  display: grid;
+  place-content: center;
+  background-color: #18191f;
+}
+
+body,
+button,
+input {
+  font-family: var(--font-main);
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+}
+
+#copy {
+  position: absolute;
+  left: -100vw;
+  top: -100vh;
+}
+
+#root {
+  /* height: 100vh; */
+}

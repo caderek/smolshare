@@ -1,0 +1,15 @@
+.Preview {
+  width: 100%;
+}
+
+.Preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Preview pre {
+  width: 100%;
+  padding: var(--space-l);
+  font-family: var(--font-mono);
+  font-size: var(--font-s);
+}

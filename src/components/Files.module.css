@@ -1,0 +1,116 @@
+.Files h2 {
+  font-size: var(--font-s);
+  font-weight: normal;
+  color: var(--color-alt-2-contrast);
+  height: var(--space-xl);
+  line-height: var(--space-xl);
+  padding: 0 var(--space-m);
+}
+
+.Files button {
+  font-size: var(--font-s);
+  color: var(--color-alt-2-low-contrast);
+  text-align: left;
+  height: var(--space-xl);
+  line-height: var(--space-xl);
+  padding: 0 var(--space-m);
+  background-color: transparent;
+}
+
+.Files button:hover,
+.Files button:hover::before {
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent-contrast);
+}
+
+.Files li {
+  font-size: var(--font-s);
+  color: var(--color-alt-2-contrast);
+  padding-left: calc(var(--space-m) + var(--space-l));
+  height: var(--space-xl);
+  line-height: var(--space-xl);
+  position: relative;
+}
+
+.Files li:hover,
+.Files li.active {
+  background-color: var(--color-alt-bg);
+  cursor: pointer;
+}
+
+.Files li::before {
+  content: "\f15b";
+  font-size: var(--font-l);
+  font-family: var(--font-ico);
+  color: var(--color-alt-2-low-contrast);
+  width: var(--space-m);
+  height: var(--space-xl);
+  position: absolute;
+  top: 0;
+  left: var(--space-m);
+}
+
+.Files li > span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  max-width: calc(100% - var(--space-l) - var(--space-s));
+}
+
+.Files li > input {
+  background-color: var(--color-bg);
+  width: calc(100% - var(--space-xl));
+  height: var(--space-xl);
+  line-height: var(--space-xl);
+  padding: 0 var(--space-s);
+  border: solid 1px var(--color-alt-2-low-contrast);
+  border-radius: var(--space-xs);
+  color: var(--color-contrast);
+  outline: none;
+}
+
+.Files li > input:focus {
+  border-color: var(--color-accent-bg);
+}
+
+.Files fieldset {
+  text-align: right;
+  position: absolute;
+  background-color: var(--color-alt-2-bg);
+  font-size: 0;
+  top: 0;
+  right: 0;
+  width: var(--space-xl);
+  height: var(--space-xl);
+  overflow: hidden;
+  direction: rtl;
+}
+
+.Files fieldset.active {
+  width: calc(var(--space-xl) * 3);
+}
+
+.Files fieldset > button {
+  width: var(--space-xl);
+  position: relative;
+  background-color: var(--color-bg);
+}
+
+.Files fieldset > button:first-child {
+  background-color: transparent;
+}
+
+.Files fieldset > button::before {
+  content: var(--ico);
+  font-family: var(--font-ico);
+  font-size: var(--font-m);
+  text-align: center;
+  color: var(--color-alt-2-low-contrast);
+  line-height: var(--space-xl);
+  width: var(--space-xl);
+  height: var(--space-xl);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

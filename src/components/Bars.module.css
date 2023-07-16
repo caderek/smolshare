@@ -1,0 +1,97 @@
+.Bars {
+  color: var(--color-contrast);
+  padding-top: var(--space-xl);
+  border-top: solid 1px var(--color-low-contrast);
+}
+
+.Bars > h2 {
+  font-size: var(--font-m);
+  color: var(--color-high-contrast);
+  font-weight: normal;
+  position: relative;
+}
+
+.Bars > h2 > span {
+  color: var(--color-contrast);
+  font-size: var(--font-s);
+  position: absolute;
+  right: 0;
+}
+
+.Bars > p {
+  font-size: var(--font-s);
+  margin: var(--space-l) 0 var(--space-xl);
+}
+
+.Bars ul {
+  list-style: none;
+}
+
+.Bars ul > * + * {
+  margin-top: var(--space-l);
+}
+
+.Bars label {
+  font-size: var(--font-s);
+  font-style: italic;
+}
+
+.Bars progress {
+  width: 100%;
+  height: 1rem;
+  margin-top: var(--space-s);
+}
+
+/* Chrome, Safari */
+
+.Bars progress::-webkit-progress-bar {
+  background-color: var(--color-alt-bg);
+  border-radius: var(--radius-s);
+}
+
+.Bars progress::-webkit-progress-value {
+  border-radius: var(--radius-s);
+}
+
+.Bars progress.great::-webkit-progress-value {
+  background-color: var(--color-status-great);
+}
+
+.Bars progress.ok::-webkit-progress-value {
+  background-color: var(--color-status-ok);
+}
+
+.Bars progress.notIdeal::-webkit-progress-value {
+  background-color: var(--color-status-not-ideal);
+}
+
+.Bars progress.bad::-webkit-progress-value {
+  background-color: var(--color-status-bad);
+}
+
+/* Firefox */
+
+.Bars progress {
+  background-color: var(--color-alt-bg);
+  border-radius: var(--radius-s);
+}
+
+.Bars progress::-moz-progress-bar {
+  border-radius: var(--radius-s);
+}
+
+.Bars progress.great::-moz-progress-bar {
+  background-color: var(--color-status-great);
+}
+
+.Bars progress.ok::-moz-progress-bar {
+  background-color: var(--color-status-ok);
+}
+
+.Bars progress.notIdeal::-moz-progress-bar {
+  background-color: var(--color-status-not-ideal);
+}
+
+.Bars progress.bad::-moz-progress-bar {
+  background-color: var(--color-status-bad);
+}

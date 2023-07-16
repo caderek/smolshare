@@ -1,0 +1,60 @@
+.Share {
+  color: var(--color-contrast);
+}
+
+.Share > h2 {
+  font-size: var(--font-m);
+  color: var(--color-high-contrast);
+  font-weight: normal;
+  margin-bottom: var(--space-m);
+}
+
+.Share ul {
+  list-style: none;
+}
+
+.Share ul > * + * {
+  margin-block-start: var(--space-xs);
+}
+
+.Share button,
+.Share a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: var(--space-xl);
+  line-height: var(--space-xl);
+  font-size: var(--font-m);
+  color: var(--color-contrast);
+  background-color: transparent;
+  border-radius: var(--radius-s);
+  text-align: left;
+  padding-left: calc(var(--space-xl) + var(--space-xs));
+  position: relative;
+}
+
+.Share button:hover,
+.Share a:hover {
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent-contrast);
+}
+
+.Share button::before,
+.Share a::before {
+  content: var(--ico);
+  font-family: var(--font-ico);
+  font-size: var(--font-m);
+  text-align: center;
+  color: var(--color-low-contrast);
+  line-height: var(--space-xl);
+  width: var(--space-xl);
+  height: var(--space-xl);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Share button:hover::before,
+.Share a:hover:before {
+  color: var(--color-accent-contrast);
+}
